@@ -1,14 +1,14 @@
 var express = require('express');
 var socket = require('socket.io');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+// const mongoose = require('mongoose');
+// const bodyParser = require('body-parser');
 
 var app = express();
 
-mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost:27017/ten`);
+// mongoose.Promise = global.Promise;
+// mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost:27017/ten`);
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 // server = app.listen(8080, function(){
 //     console.log('server is running on port 8080')
